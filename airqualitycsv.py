@@ -33,7 +33,7 @@ def writeCSV(data):
 bme = BME68X(cnst.BME68X_I2C_ADDR_LOW, bsec.BSEC_ENABLE)
 print("*********************************************************")
 
-header = ["TIMESTAMP", "IAQ", "IAQ ACCURACY", "TEMPERATURE", "RAW TEMPERATURE", "RAW PRESSURE", "HUMIDITY", "CO2 EQUIVALENT", "CO2 ACCURACY", "BREATH VOC CONCENTRATION", "BREATH VOC ACCURACY"]
+header = ["Timestamp", "IAQ", "IAQ Accuracy", "Temperature", "Raw Temperature", "Raw Pressure", "Humidity", "CO2 Equivalent", "CO2 Accuracy", "Breath VOC Concentration", "Breath VOC Accuracy"]
 
 with open('output.csv', 'a+', encoding='UTF8', newline='') as writecsv:
         writer(writecsv).writerow(header)
