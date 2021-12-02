@@ -24,7 +24,7 @@ def writeCSV(data):
     data["breath_voc_accuracy"]]
               
     
-    with open('output.csv', 'a+', encoding='UTF8', newline='') as writecsv:
+    with open('../Outputs/BMEoutput.csv', 'a+', encoding='UTF8', newline='') as writecsv:
         writer(writecsv).writerow(row)
 
 
@@ -35,7 +35,7 @@ print("*********************************************************")
 
 header = ["Timestamp", "IAQ", "IAQ Accuracy", "Temperature", "Raw Temperature", "Raw Pressure", "Humidity", "CO2 Equivalent", "CO2 Accuracy", "Breath VOC Concentration", "Breath VOC Accuracy"]
 
-with open('output.csv', 'a+', encoding='UTF8', newline='') as writecsv:
+with open('../Outputs/BMEoutput.csv', 'a+', encoding='UTF8', newline='') as writecsv:
         writer(writecsv).writerow(header)
 
 while(True):
