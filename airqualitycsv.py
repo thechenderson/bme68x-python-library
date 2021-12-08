@@ -41,8 +41,6 @@ with open('../Outputs/BMEoutput.csv', 'a+', encoding='UTF8', newline='') as writ
 while(True):
     data = bme.get_bsec_data()
     writeCSV(data)
-    print("RECORDING AIR QUALITY - " + datetime.now().strftime("%H:%M:%S"))
-    print("********************************\n")
-    print(data)
+    print("BME688 RECORDING AIR QUALITY - " + datetime.now().strftime("%H:%M:%S"))
     print("********************************\n")
     sleep(3)
